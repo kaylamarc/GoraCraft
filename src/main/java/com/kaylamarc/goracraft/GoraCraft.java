@@ -1,6 +1,9 @@
 package com.kaylamarc.goracraft;
 
 import com.kaylamarc.goracraft.util.RegistryHandler;
+import net.minecraft.entity.ai.goal.UseItemGoal;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -30,5 +33,15 @@ public class GoraCraft
     private void setup(final FMLCommonSetupEvent event) { }
 
     private void doClientStuff(final FMLClientSetupEvent event) { }
+
+    /**
+     * add GoraCraft creative tab
+     */
+    public static final ItemGroup TAB = new ItemGroup("GoraCraftTab") {
+        @Override
+        public ItemStack createIcon() {
+            return new ItemStack(RegistryHandler.RUBY.get());
+        }
+    };
 
 }
