@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "goracraft:ruby_ore_block_item"
+  },
+  "result": "goracraft:ruby",
+  "experience": 4.0,
+  "cookingtime": 200
+}

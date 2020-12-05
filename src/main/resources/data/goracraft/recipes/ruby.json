@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:emerald"
+    },
+    {
+      "item": "minecraft:redstone"
+    }
+  ],
+  "result":
+  {
+    "item": "goracraft:ruby",
+    "count": 1
+  }
+}
