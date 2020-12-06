@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " xx",
+    " ix",
+    " i "
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "goracraft:ruby"
+    },
+    "i":
+    {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result":
+  {
+    "item": "goracraft:ruby_axe",
+    "count": 1
+  }
+}
