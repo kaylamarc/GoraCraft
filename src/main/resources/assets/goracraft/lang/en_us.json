@@ -1,8 +1,8 @@
 {
+  "itemGroup.GoraCraftTab": "GoraCraft",
   "item.goracraft.ruby": "Ruby",
   "block.goracraft.ruby_block": "Block of Ruby",
   "block.goracraft.ruby_ore_block": "Ruby Ore",
-  "itemGroup.GoraCraftTab": "GoraCraft",
   "item.goracraft.ruby_sword": "Ruby Sword",
   "item.goracraft.ruby_pickaxe": "Ruby Pickaxe",
   "item.goracraft.ruby_axe": "Ruby Axe",
@@ -11,5 +11,8 @@
   "item.goracraft.ruby_helmet": "Ruby Helmet",
   "item.goracraft.ruby_chestplate": "Ruby Chestplate",
   "item.goracraft.ruby_leggings": "Ruby Leggings",
-  "item.goracraft.ruby_boots": "Ruby Slippers"
+  "item.goracraft.ruby_boots": "Ruby Slippers",
+  "item.goracraft.cereal": "Cereal",
+  "item.goracraft.cheese": "Cheese",
+  "item.goracraft.pizza": "Pizza"
 }

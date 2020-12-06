@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " m ",
+    " w ",
+    " b "
+  ],
+  "key":
+  {
+    "b":
+    {
+      "item": "minecraft:bowl"
+    },
+    "m":
+    {
+      "item": "minecraft:milk_bucket"
+    },
+    "w":
+    {
+      "item": "minecraft:wheat"
+    }
+  },
+  "result":
+  {
+    "item": "goracraft:cereal",
+    "count": 1
+  }
+}

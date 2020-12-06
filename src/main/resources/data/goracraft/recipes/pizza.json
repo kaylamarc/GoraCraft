@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "ppp",
+    "ccc",
+    "bbb"
+  ],
+  "key":
+  {
+    "p":
+    {
+      "item": "minecraft:cooked_porkchop"
+    },
+    "c":
+    {
+      "item": "goracraft:cheese"
+    },
+    "b":
+    {
+      "item": "minecraft:bread"
+    }
+  },
+  "result":
+  {
+    "item": "goracraft:pizza",
+    "count": 1
+  }
+}

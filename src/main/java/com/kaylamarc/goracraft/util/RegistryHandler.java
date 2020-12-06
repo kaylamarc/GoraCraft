@@ -5,7 +5,10 @@ import com.kaylamarc.goracraft.GoraCraft;
 import com.kaylamarc.goracraft.blocks.BlockItemBase;
 import com.kaylamarc.goracraft.blocks.RubyBlock;
 import com.kaylamarc.goracraft.blocks.RubyOreBlock;
+import com.kaylamarc.goracraft.items.Cereal;
+import com.kaylamarc.goracraft.items.Cheese;
 import com.kaylamarc.goracraft.items.ItemBase;
+import com.kaylamarc.goracraft.items.Pizza;
 import com.kaylamarc.goracraft.tools.ModItemTier;
 import net.minecraft.block.Block;
 import net.minecraft.inventory.EquipmentSlotType;
@@ -28,6 +31,9 @@ public class RegistryHandler {
 
     // Items
     public static final RegistryObject<Item> RUBY = ITEMS.register("ruby", ItemBase::new);
+    public static final RegistryObject<Cereal> CEREAL = ITEMS.register("cereal", Cereal::new);
+    public static final RegistryObject<Cheese> CHEESE = ITEMS.register("cheese", Cheese::new);
+    public static final RegistryObject<Pizza> PIZZA = ITEMS.register("pizza", Pizza::new);
 
     // Tools
     public static final RegistryObject<SwordItem> RUBY_SWORD = ITEMS.register("ruby_sword", () ->

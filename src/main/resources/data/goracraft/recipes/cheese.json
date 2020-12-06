@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "minecraft:milk_bucket"
+  },
+  "result": "goracraft:cheese",
+  "experience": 4.0,
+  "cookingtime": 200
+}
