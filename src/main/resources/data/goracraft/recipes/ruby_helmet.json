@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    "x x",
+    "   "
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "goracraft:ruby"
+    }
+  },
+  "result":
+  {
+    "item": "goracraft:ruby_helmet",
+    "count": 1
+  }
+}

@@ -1,5 +1,6 @@
 package com.kaylamarc.goracraft.util;
 
+import com.kaylamarc.armor.ModArmorMaterial;
 import com.kaylamarc.goracraft.GoraCraft;
 import com.kaylamarc.goracraft.blocks.BlockItemBase;
 import com.kaylamarc.goracraft.blocks.RubyBlock;
@@ -7,6 +8,7 @@ import com.kaylamarc.goracraft.blocks.RubyOreBlock;
 import com.kaylamarc.goracraft.items.ItemBase;
 import com.kaylamarc.goracraft.tools.ModItemTier;
 import net.minecraft.block.Block;
+import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -38,6 +40,16 @@ public class RegistryHandler {
             new ShovelItem(ModItemTier.RUBY, 0.6f, -3.0f, new Item.Properties().group(GoraCraft.TAB)));
     public static final RegistryObject<HoeItem> RUBY_HOE = ITEMS.register("ruby_hoe", () ->
             new HoeItem(ModItemTier.RUBY, -1.0f, new Item.Properties().group(GoraCraft.TAB)));
+
+    // Armor
+    public static final RegistryObject<ArmorItem> RUBY_HELMET = ITEMS.register("ruby_helmet", () ->
+            new ArmorItem(ModArmorMaterial.RUBY, EquipmentSlotType.HEAD, new Item.Properties().group(GoraCraft.TAB)));
+    public static final RegistryObject<ArmorItem> RUBY_CHESTPLATE = ITEMS.register("ruby_chestplate", () ->
+            new ArmorItem(ModArmorMaterial.RUBY, EquipmentSlotType.CHEST, new Item.Properties().group(GoraCraft.TAB)));
+    public static final RegistryObject<ArmorItem> RUBY_LEGGINGS = ITEMS.register("ruby_leggings", () ->
+            new ArmorItem(ModArmorMaterial.RUBY, EquipmentSlotType.LEGS, new Item.Properties().group(GoraCraft.TAB)));
+    public static final RegistryObject<ArmorItem> RUBY_boots = ITEMS.register("ruby_boots", () ->
+            new ArmorItem(ModArmorMaterial.RUBY, EquipmentSlotType.FEET, new Item.Properties().group(GoraCraft.TAB)));
 
     // Blocks
     public static final RegistryObject<Block> RUBY_BLOCK = BLOCKS.register("ruby_block", RubyBlock::new);
