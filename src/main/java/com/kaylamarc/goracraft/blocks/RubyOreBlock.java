@@ -12,6 +12,8 @@ public class RubyOreBlock extends Block {
                 .hardnessAndResistance(5.0f, 6.0f)
                 .sound(SoundType.STONE)
                 .harvestLevel(2)
-                .harvestTool(ToolType.PICKAXE));
+                .setRequiresTool()
+                .harvestTool(ToolType.PICKAXE)
+        );
     }
 }

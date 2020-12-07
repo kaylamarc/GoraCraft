@@ -18,7 +18,7 @@ public enum ModArmorMaterial implements IArmorMaterial {
 
     // Ruby Armor set enum
     RUBY(GoraCraft.MOD_ID + ":ruby", 27, new int[]{4, 6, 7, 4}, 18,
-            SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, () -> {return Ingredient.fromItems(RegistryHandler.RUBY.get());});
+            SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, () -> {return Ingredient.fromItems(RegistryHandler.RUBY.get());}, 1);
 
     private static final int[] MAX_DAMAGE_ARRAY = {11, 16, 15, 13};
     private final String name;
@@ -28,9 +28,10 @@ public enum ModArmorMaterial implements IArmorMaterial {
     private final SoundEvent soundEvent;
     private final float toughness;
     private final Supplier<Ingredient> repairMaterial;
+    private final float knockbackResistance;
 
     ModArmorMaterial(String name, int maxDamageFactor, int[] damageReductionAmt, int enchantability,
-                            SoundEvent soundEvent, float toughness, Supplier<Ingredient> repairMaterial) {
+                            SoundEvent soundEvent, float toughness, Supplier<Ingredient> repairMaterial, float knockbackResistance) {
         this.name = name;
         this.maxDamageFactor = maxDamageFactor;
         this.damageReductionAmt = damageReductionAmt;
@@ -38,7 +39,7 @@ public enum ModArmorMaterial implements IArmorMaterial {
         this.soundEvent = soundEvent;
         this.toughness = toughness;
         this.repairMaterial = repairMaterial;
-
+        this.knockbackResistance = knockbackResistance;
     }
 
     /**
@@ -99,5 +100,10 @@ public enum ModArmorMaterial implements IArmorMaterial {
     @Override
     public float getToughness() {
         return this.toughness;
+    }
+
+    @Override
+    public float func_230304_f_() {
+        return this.knockbackResistance;
     }
 }
