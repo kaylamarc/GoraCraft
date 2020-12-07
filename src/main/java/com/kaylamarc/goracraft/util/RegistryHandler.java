@@ -3,6 +3,7 @@ package com.kaylamarc.goracraft.util;
 import com.kaylamarc.armor.ModArmorMaterial;
 import com.kaylamarc.goracraft.GoraCraft;
 import com.kaylamarc.goracraft.blocks.BlockItemBase;
+import com.kaylamarc.goracraft.blocks.Oven;
 import com.kaylamarc.goracraft.blocks.RubyBlock;
 import com.kaylamarc.goracraft.blocks.RubyOreBlock;
 import com.kaylamarc.goracraft.items.Cereal;
@@ -60,8 +61,10 @@ public class RegistryHandler {
     // Blocks
     public static final RegistryObject<Block> RUBY_BLOCK = BLOCKS.register("ruby_block", RubyBlock::new);
     public static final RegistryObject<Block> RUBY_ORE_BLOCK = BLOCKS.register("ruby_ore_block", RubyOreBlock::new);
+    public static final RegistryObject<Block> OVEN = BLOCKS.register("oven", Oven::new);
 
     // Block Items
     public static final RegistryObject<Item> RUBY_BLOCK_ITEM = ITEMS.register("ruby_block_item", () -> new BlockItemBase(RUBY_BLOCK.get()));
     public static final RegistryObject<Item> RUBY_ORE_BLOCK_ITEM = ITEMS.register("ruby_ore_block_item", () -> new BlockItemBase(RUBY_ORE_BLOCK.get()));
+    public static final RegistryObject<Item> OVEN_BLOCK_ITEM = ITEMS.register("oven_block_item", () -> new BlockItemBase(OVEN.get()));
 }
