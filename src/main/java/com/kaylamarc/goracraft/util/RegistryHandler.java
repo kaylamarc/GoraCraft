@@ -1,6 +1,6 @@
 package com.kaylamarc.goracraft.util;
 
-import com.kaylamarc.armor.ModArmorMaterial;
+import com.kaylamarc.goracraft.armor.ModArmorMaterial;
 import com.kaylamarc.goracraft.GoraCraft;
 import com.kaylamarc.goracraft.blocks.BlockItemBase;
 import com.kaylamarc.goracraft.blocks.Oven;
@@ -55,7 +55,7 @@ public class RegistryHandler {
             new ArmorItem(ModArmorMaterial.RUBY, EquipmentSlotType.CHEST, new Item.Properties().group(GoraCraft.TAB)));
     public static final RegistryObject<ArmorItem> RUBY_LEGGINGS = ITEMS.register("ruby_leggings", () ->
             new ArmorItem(ModArmorMaterial.RUBY, EquipmentSlotType.LEGS, new Item.Properties().group(GoraCraft.TAB)));
-    public static final RegistryObject<ArmorItem> RUBY_boots = ITEMS.register("ruby_boots", () ->
+    public static final RegistryObject<ArmorItem> RUBY_BOOTS = ITEMS.register("ruby_boots", () ->
             new ArmorItem(ModArmorMaterial.RUBY, EquipmentSlotType.FEET, new Item.Properties().group(GoraCraft.TAB)));
 
     // Blocks

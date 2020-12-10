@@ -1,8 +1,7 @@
-package com.kaylamarc.armor;
+package com.kaylamarc.goracraft.armor;
 
 import com.kaylamarc.goracraft.GoraCraft;
 import com.kaylamarc.goracraft.util.RegistryHandler;
-import net.minecraft.client.audio.ISoundEventListener;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.crafting.Ingredient;

@@ -15,7 +15,7 @@ import org.apache.logging.log4j.Logger;
 @Mod("goracraft")
 public class GoraCraft
 {
-    private static final Logger LOGGER = LogManager.getLogger();
+    public static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID = "goracraft";
 
     public GoraCraft() {
