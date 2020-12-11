@@ -37,7 +37,7 @@ public class ModClientEvents {
             World world = player.getEntityWorld(); // get the world
 
             // set block under player to ruby block
-            world.setBlockState(player.func_233580_cy_().add(0, -1, 0), ModBlocks.RUBY_BLOCK.get().getDefaultState());
+            world.setBlockState(player.getPosition().add(0, -1, 0), ModBlocks.RUBY_BLOCK.get().getDefaultState());
         }
     }
 
