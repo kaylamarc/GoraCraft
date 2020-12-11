@@ -17,6 +17,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.GuiOpenEvent;
 import net.minecraftforge.event.entity.living.LivingEvent;
 import net.minecraftforge.event.entity.player.AttackEntityEvent;
+import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
@@ -72,10 +73,11 @@ public class ModClientEvents {
     @SubscribeEvent
     public static void onCraftingTable(GuiOpenEvent event) {
         if (event.isCancelable()) {
-            if(event.getGui() instanceof CraftingScreen) {
+            if (event.getGui() instanceof CraftingScreen) {
                 event.setCanceled(true);
                 GoraCraft.LOGGER.info("Player tried to open a crafting table... dummy!");
             }
         }
     }
 }
+

@@ -2,6 +2,7 @@ package com.kaylamarc.goracraft;
 
 import com.kaylamarc.goracraft.init.ModBlocks;
 import com.kaylamarc.goracraft.init.ModItems;
+import com.kaylamarc.goracraft.world.gen.ModOreGen;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
@@ -32,7 +33,9 @@ public class GoraCraft
         MinecraftForge.EVENT_BUS.register(this);
     }
 
-    private void setup(final FMLCommonSetupEvent event) { }
+    private void setup(final FMLCommonSetupEvent event) {
+        ModOreGen.registerOres();
+    }
 
     private void doClientStuff(final FMLClientSetupEvent event) { }
 
