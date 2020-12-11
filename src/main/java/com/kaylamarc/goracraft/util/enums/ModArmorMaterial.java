@@ -1,7 +1,7 @@
-package com.kaylamarc.goracraft.armor;
+package com.kaylamarc.goracraft.util.enums;
 
 import com.kaylamarc.goracraft.GoraCraft;
-import com.kaylamarc.goracraft.util.RegistryHandler;
+import com.kaylamarc.goracraft.init.ModItems;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.crafting.Ingredient;
@@ -17,7 +17,7 @@ public enum ModArmorMaterial implements IArmorMaterial {
 
     // Ruby Armor set enum
     RUBY(GoraCraft.MOD_ID + ":ruby", 27, new int[]{4, 6, 7, 4}, 18,
-            SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, () -> {return Ingredient.fromItems(RegistryHandler.RUBY.get());}, 1);
+            SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0F, () -> {return Ingredient.fromItems(ModItems.RUBY.get());}, 1);
 
     private static final int[] MAX_DAMAGE_ARRAY = {11, 16, 15, 13};
     private final String name;

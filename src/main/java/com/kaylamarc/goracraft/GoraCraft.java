@@ -1,7 +1,7 @@
 package com.kaylamarc.goracraft;
 
-import com.kaylamarc.goracraft.util.RegistryHandler;
-import net.minecraft.entity.ai.goal.UseItemGoal;
+import com.kaylamarc.goracraft.init.ModBlocks;
+import com.kaylamarc.goracraft.init.ModItems;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
@@ -24,7 +24,9 @@ public class GoraCraft
         // Register the doClientStuff method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
 
-        RegistryHandler.init();
+        // Register mod blocks and items
+        ModBlocks.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        ModItems.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
@@ -40,7 +42,7 @@ public class GoraCraft
     public static final ItemGroup TAB = new ItemGroup("GoraCraftTab") {
         @Override
         public ItemStack createIcon() {
-            return new ItemStack(RegistryHandler.RUBY.get());
+            return new ItemStack(ModItems.RUBY.get());
         }
     };
 

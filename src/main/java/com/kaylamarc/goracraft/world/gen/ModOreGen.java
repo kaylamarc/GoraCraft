@@ -1,7 +1,7 @@
 package com.kaylamarc.goracraft.world.gen;
 
 import com.kaylamarc.goracraft.GoraCraft;
-import com.kaylamarc.goracraft.util.RegistryHandler;
+import com.kaylamarc.goracraft.init.ModBlocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.GenerationStage;
@@ -37,25 +37,25 @@ public class ModOreGen {
                 if(biome.getCategory() == Biome.Category.EXTREME_HILLS) {
                     genOre(biome, 15, 8, 5, 40,
                             OreFeatureConfig.FillerBlockType.NATURAL_STONE,
-                            RegistryHandler.RUBY_ORE_BLOCK.get().getDefaultState(), 5);
+                            ModBlocks.RUBY_ORE_BLOCK.get().getDefaultState(), 5);
                 }
                 // Savanna Generation
                 else if(biome.getCategory() == Biome.Category.SAVANNA) {
                     genOre(biome, 3, 8, 5, 40,
                             OreFeatureConfig.FillerBlockType.NATURAL_STONE,
-                            RegistryHandler.RUBY_ORE_BLOCK.get().getDefaultState(), 3);
+                            ModBlocks.RUBY_ORE_BLOCK.get().getDefaultState(), 3);
                 }
                 // Swamp Generation
                 else if(biome.getCategory() == Biome.Category.SWAMP) {
                     genOre(biome, 15, 8, 5, 40,
                             OreFeatureConfig.FillerBlockType.NATURAL_STONE,
-                            RegistryHandler.RUBY_ORE_BLOCK.get().getDefaultState(), 7);
+                            ModBlocks.RUBY_ORE_BLOCK.get().getDefaultState(), 7);
                 }
                 // Rest of Biomes generation
                 else {
                     genOre(biome, 2, 8, 5, 40,
                             OreFeatureConfig.FillerBlockType.NATURAL_STONE,
-                            RegistryHandler.RUBY_ORE_BLOCK.get().getDefaultState(), 2);
+                            ModBlocks.RUBY_ORE_BLOCK.get().getDefaultState(), 2);
                 }
             }
         }

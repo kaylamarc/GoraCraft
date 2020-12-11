@@ -1,6 +1,6 @@
-package com.kaylamarc.goracraft.tools;
+package com.kaylamarc.goracraft.util.enums;
 
-import com.kaylamarc.goracraft.util.RegistryHandler;
+import com.kaylamarc.goracraft.init.ModItems;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.crafting.Ingredient;
 
@@ -10,7 +10,7 @@ import java.util.function.Supplier;
 public enum ModItemTier implements IItemTier {
 
     RUBY(3, 900, 7.0f, 3.0f, 12, () -> {
-        return Ingredient.fromItems(RegistryHandler.RUBY_SWORD.get());
+        return Ingredient.fromItems(ModItems.RUBY_SWORD.get());
     });
 
     private final int harvestLevel;

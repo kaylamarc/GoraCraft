@@ -1,7 +1,8 @@
 package com.kaylamarc.goracraft.events;
 
 import com.kaylamarc.goracraft.GoraCraft;
-import com.kaylamarc.goracraft.util.RegistryHandler;
+import com.kaylamarc.goracraft.init.ModBlocks;
+import com.kaylamarc.goracraft.init.ModItems;
 import net.minecraft.client.gui.screen.inventory.CraftingScreen;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.passive.CatEntity;
@@ -36,7 +37,7 @@ public class ModClientEvents {
             World world = player.getEntityWorld(); // get the world
 
             // set block under player to ruby block
-            world.setBlockState(player.func_233580_cy_().add(0, -1, 0), RegistryHandler.RUBY_BLOCK.get().getDefaultState());
+            world.setBlockState(player.func_233580_cy_().add(0, -1, 0), ModBlocks.RUBY_BLOCK.get().getDefaultState());
         }
     }
 
@@ -44,7 +45,7 @@ public class ModClientEvents {
     @SubscribeEvent
     public static void onDamageCat(AttackEntityEvent event) {
         // if attack entity with cereal
-        if (event.getEntityLiving().getHeldItemMainhand().getItem() == RegistryHandler.CEREAL.get()) {
+        if (event.getEntityLiving().getHeldItemMainhand().getItem() == ModItems.CEREAL.get()) {
 
             // check if target is alive
             if (event.getTarget().isAlive()) {
