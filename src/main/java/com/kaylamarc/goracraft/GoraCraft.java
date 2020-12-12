@@ -1,11 +1,15 @@
 package com.kaylamarc.goracraft;
 
+import com.kaylamarc.goracraft.entities.RaccoonEntity;
 import com.kaylamarc.goracraft.init.ModBlocks;
+import com.kaylamarc.goracraft.init.ModEntityTypes;
 import com.kaylamarc.goracraft.init.ModItems;
 import com.kaylamarc.goracraft.world.gen.ModOreGen;
+import net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.fml.DeferredWorkQueue;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -29,12 +33,18 @@ public class GoraCraft
         ModBlocks.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
         ModItems.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
 
+        // Register Mod Entities
+        ModEntityTypes.ENTITY_TYPES.register(FMLJavaModLoadingContext.get().getModEventBus());
+
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
     }
 
     private void setup(final FMLCommonSetupEvent event) {
         ModOreGen.registerOres();
+        DeferredWorkQueue.runLater(() -> {
+            GlobalEntityTypeAttributes.put(ModEntityTypes.RACCOON.get(), RaccoonEntity.setCustomAttributes().create());
+        });
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) { }
