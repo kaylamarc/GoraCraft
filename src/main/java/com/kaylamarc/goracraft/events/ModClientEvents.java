@@ -68,16 +68,5 @@ public class ModClientEvents {
             }
         }
     }
-
-    // Disable opening crafting table
-    @SubscribeEvent
-    public static void onCraftingTable(GuiOpenEvent event) {
-        if (event.isCancelable()) {
-            if (event.getGui() instanceof CraftingScreen) {
-                event.setCanceled(true);
-                GoraCraft.LOGGER.info("Player tried to open a crafting table... dummy!");
-            }
-        }
-    }
 }
 
