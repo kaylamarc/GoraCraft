@@ -53,4 +53,6 @@ public class ModItems {
             () -> new BlockItemBase(ModBlocks.RUBY_ORE_BLOCK.get()));
     public static final RegistryObject<Item> OVEN_BLOCK_ITEM = ITEMS.register("oven_block_item",
             () -> new BlockItemBase(ModBlocks.OVEN.get()));
+    public static final RegistryObject<Item> TRASHCAN_BLOCK_ITEM = ITEMS.register("trashcan_block_item",
+            () -> new BlockItemBase(ModBlocks.TRASHCAN.get()));
 }

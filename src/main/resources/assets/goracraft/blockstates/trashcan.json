@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "goracraft:block/trashcan" },
+    "facing=south": { "model": "goracraft:block/trashcan", "y":  180},
+    "facing=west": { "model": "goracraft:block/trashcan", "y":  270},
+    "facing=east": { "model": "goracraft:block/trashcan", "y":  90}
+  }
+}
