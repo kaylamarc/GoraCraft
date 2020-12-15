@@ -2,10 +2,7 @@ package com.kaylamarc.goracraft.init;
 
 import com.kaylamarc.goracraft.GoraCraft;
 import com.kaylamarc.goracraft.blocks.BlockItemBase;
-import com.kaylamarc.goracraft.items.Cereal;
-import com.kaylamarc.goracraft.items.Cheese;
-import com.kaylamarc.goracraft.items.ItemBase;
-import com.kaylamarc.goracraft.items.Pizza;
+import com.kaylamarc.goracraft.items.*;
 import com.kaylamarc.goracraft.util.enums.ModArmorMaterial;
 import com.kaylamarc.goracraft.util.enums.ModItemTier;
 import net.minecraft.inventory.EquipmentSlotType;
@@ -24,6 +21,8 @@ public class ModItems {
     public static final RegistryObject<Cereal> CEREAL = ITEMS.register("cereal", Cereal::new);
     public static final RegistryObject<Cheese> CHEESE = ITEMS.register("cheese", Cheese::new);
     public static final RegistryObject<Pizza> PIZZA = ITEMS.register("pizza", Pizza::new);
+    public static final RegistryObject<ModSpawnEggItem> RACCOON_SPAWN_EGG = ITEMS.register("raccoon_spawn_egg",
+            () -> new ModSpawnEggItem(ModEntityTypes.RACCOON, 0xfcc2f9, 0xc2fcfa, new Item.Properties().group(GoraCraft.TAB)));
 
     // Tools
     public static final RegistryObject<SwordItem> RUBY_SWORD = ITEMS.register("ruby_sword",
