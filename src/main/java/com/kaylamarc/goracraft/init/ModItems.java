@@ -18,6 +18,7 @@ public class ModItems {
 
     // Items
     public static final RegistryObject<Item> RUBY = ITEMS.register("ruby", ItemBase::new);
+    public static final RegistryObject<Item> IRON_STICK = ITEMS.register("iron_stick", ItemBase::new);
     public static final RegistryObject<Cereal> CEREAL = ITEMS.register("cereal", Cereal::new);
     public static final RegistryObject<Cheese> CHEESE = ITEMS.register("cheese", Cheese::new);
     public static final RegistryObject<Pizza> PIZZA = ITEMS.register("pizza", Pizza::new);
