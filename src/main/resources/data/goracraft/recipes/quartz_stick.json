@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "   ",
+    " q ",
+    " q "
+  ],
+  "key":
+  {
+    "q":
+    {
+      "item": "minecraft:quartz"
+    }
+  },
+  "result":
+  {
+    "item": "goracraft:quartz_stick",
+    "count": 4
+  }
+}
