@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " qq",
+    " dq",
+    "d  "
+  ],
+  "key":
+  {
+    "d":
+    {
+      "item": "goracraft:diamond_stick"
+    },
+    "q":
+    {
+      "item": "goracraft:quartz_stick"
+    }
+  },
+  "result":
+  {
+    "item": "minecraft:trident",
+    "count": 1
+  }
+}
