@@ -30,6 +30,8 @@ public class ModItems {
     // Tools
     public static final RegistryObject<SwordItem> RUBY_SWORD = ITEMS.register("ruby_sword",
             () -> new SwordItem(ModItemTier.RUBY, 2, -1.7f, new Item.Properties().group(GoraCraft.TAB)));
+    public static final RegistryObject<SwordItem> EMERALD_SWORD = ITEMS.register("emerald_sword",
+            () -> new SwordItem(ModItemTier.EMERALD, 2, -1.6f, new Item.Properties().group(GoraCraft.TAB)));
     public static final RegistryObject<PickaxeItem> RUBY_PICKAXE = ITEMS.register("ruby_pickaxe",
             () -> new PickaxeItem(ModItemTier.RUBY, 0, -2.8f, new Item.Properties().group(GoraCraft.TAB)));
     public static final RegistryObject<AxeItem> RUBY_AXE = ITEMS.register("ruby_axe",

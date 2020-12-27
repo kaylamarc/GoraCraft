@@ -11,6 +11,9 @@ public enum ModItemTier implements IItemTier {
 
     RUBY(3, 900, 7.0f, 3.0f, 12, () -> {
         return Ingredient.fromItems(ModItems.RUBY_SWORD.get());
+    }),
+    EMERALD(3, 1200, 7.0f, 4.0f, 12, () -> {
+        return Ingredient.fromItems(ModItems.EMERALD_SWORD.get());
     });
 
     private final int harvestLevel;
