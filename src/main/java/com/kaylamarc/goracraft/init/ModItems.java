@@ -38,6 +38,8 @@ public class ModItems {
             () -> new PickaxeItem(ModItemTier.EMERALD, 0, -2.4f, new Item.Properties().group(GoraCraft.TAB)));
     public static final RegistryObject<AxeItem> RUBY_AXE = ITEMS.register("ruby_axe",
             () -> new AxeItem(ModItemTier.RUBY, 6, -3.1f, new Item.Properties().group(GoraCraft.TAB)));
+    public static final RegistryObject<AxeItem> EMERALD_AXE = ITEMS.register("emerald_axe",
+            () -> new AxeItem(ModItemTier.EMERALD, 4, -2.9f, new Item.Properties().group(GoraCraft.TAB)));
     public static final RegistryObject<ShovelItem> RUBY_SHOVEL = ITEMS.register("ruby_shovel",
             () -> new ShovelItem(ModItemTier.RUBY, 0.6f, -3.0f, new Item.Properties().group(GoraCraft.TAB)));
     public static final RegistryObject<HoeItem> RUBY_HOE = ITEMS.register("ruby_hoe",
