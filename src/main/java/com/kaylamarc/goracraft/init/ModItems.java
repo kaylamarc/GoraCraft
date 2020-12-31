@@ -42,6 +42,8 @@ public class ModItems {
             () -> new AxeItem(ModItemTier.EMERALD, 4, -2.9f, new Item.Properties().group(GoraCraft.TAB)));
     public static final RegistryObject<ShovelItem> RUBY_SHOVEL = ITEMS.register("ruby_shovel",
             () -> new ShovelItem(ModItemTier.RUBY, 0.6f, -3.0f, new Item.Properties().group(GoraCraft.TAB)));
+    public static final RegistryObject<ShovelItem> EMERALD_SHOVEL = ITEMS.register("emerald_shovel",
+            () -> new ShovelItem(ModItemTier.EMERALD, 0.5f, -2.8f, new Item.Properties().group(GoraCraft.TAB)));
     public static final RegistryObject<HoeItem> RUBY_HOE = ITEMS.register("ruby_hoe",
             () -> new HoeItem(ModItemTier.RUBY, -3,-1.0f, new Item.Properties().group(GoraCraft.TAB)));
 
