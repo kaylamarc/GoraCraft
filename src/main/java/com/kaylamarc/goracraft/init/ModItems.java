@@ -47,7 +47,7 @@ public class ModItems {
     public static final RegistryObject<HoeItem> RUBY_HOE = ITEMS.register("ruby_hoe",
             () -> new HoeItem(ModItemTier.RUBY, -3,-1.0f, new Item.Properties().group(GoraCraft.TAB)));
     public static final RegistryObject<HoeItem> EMERALD_HOE = ITEMS.register("emerald_hoe",
-            () -> new HoeItem(ModItemTier.RUBY, -2,-0.9f, new Item.Properties().group(GoraCraft.TAB)));
+            () -> new HoeItem(ModItemTier.EMERALD, -2,-0.9f, new Item.Properties().group(GoraCraft.TAB)));
 
     // Armor
     public static final RegistryObject<ArmorItem> RUBY_HELMET = ITEMS.register("ruby_helmet",
