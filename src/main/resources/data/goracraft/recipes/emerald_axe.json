@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " ee",
+    " ie",
+    " i "
+  ],
+  "key":
+  {
+    "e":
+    {
+      "item": "minecraft:emerald"
+    },
+    "i":
+    {
+      "item": "minecraft:stick"
+    }
+  },
+  "result":
+  {
+    "item": "goracraft:emerald_axe",
+    "count": 1
+  }
+}
