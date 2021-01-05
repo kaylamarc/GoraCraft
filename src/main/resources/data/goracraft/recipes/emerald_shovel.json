@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " e ",
+    " i ",
+    " i "
+  ],
+  "key":
+  {
+    "e":
+    {
+      "item": "minecraft:emerald"
+    },
+    "i":
+    {
+      "item": "minecraft:stick"
+    }
+  },
+  "result":
+  {
+    "item": "goracraft:emerald_shovel",
+    "count": 1
+  }
+}
